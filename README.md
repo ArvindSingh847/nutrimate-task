@@ -4,7 +4,7 @@
 
 This project is a simple mobile app and web integration task.
 
-The mobile application sends a request to a deployed Node.js server. The server responds with "Hi Hello" and stores the interaction in MongoDB.
+The mobile application sends a request to a deployed Node.js server. The server responds with "Hi Hello" and stores the interaction in MongoDB Atlas.
 
 ## Tech Stack
 
@@ -34,15 +34,24 @@ The mobile application sends a request to a deployed Node.js server. The server 
 * Server stores interaction details in MongoDB.
 * APK generated for Android devices.
 
+## Project Structure
+
+Nutrimate-Submission/
+
+* APK/
+* Nutrimate-Backend/
+* Nutrimate-Frontend/
+* README.md
+
 ## Deployment Link
 
 https://nutrimate-task.onrender.com/
 
 ## API Endpoint
 
-POST /hello
+POST https://nutrimate-task.onrender.com/hello
 
-Response:
+Sample Response:
 
 {
 "message": "Hi Hello"
@@ -60,6 +69,15 @@ Document Structure:
 "response": "Hi Hello",
 "timestamp": Date
 }
+
+## SQL Equivalent Schema
+
+CREATE TABLE interactions (
+id SERIAL PRIMARY KEY,
+user_action TEXT,
+response TEXT,
+timestamp TIMESTAMP
+);
 
 ## Running Backend Locally
 
@@ -93,4 +111,5 @@ npx expo start
 * Generated APK
 * Backend Source Code
 * Deployment Link
-* MongoDB Database Integration
+* Database Schema
+* README
