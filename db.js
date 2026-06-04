@@ -1,6 +1,6 @@
 const { MongoClient } = require("mongodb");
 
-const uri = "mongodb+srv://nutrimateuser:Nutrimate12345@nutrimate-cluster.jpff5ay.mongodb.net/?appName=nutrimate-cluster";
+const uri = process.env.MONGODB_URI;
 
 const client = new MongoClient(uri);
 
