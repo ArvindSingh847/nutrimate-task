@@ -46,6 +46,9 @@ The mobile application contains a button that sends a request to a deployed Node
 ```text
 nutrimate-task/
 │
+├── APK/
+│   └── Nutrimate-task.apk
+│
 ├── frontend/
 │   ├── app/
 │   ├── assets/
