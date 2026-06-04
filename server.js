@@ -16,7 +16,7 @@ connectDB().then((database) => {
 });
 
 app.get("/", (req, res) => {
-    res.send("Hi Hello");
+    res.send("Nutrimate Backend Running");
 });
 
 app.post("/hello", async (req, res) => {
